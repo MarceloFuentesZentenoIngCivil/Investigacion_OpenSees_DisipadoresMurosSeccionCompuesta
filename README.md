@@ -1,0 +1,2 @@
+# Investigacion_OpenSees_DisipadoresMurosSeccionCompuesta
+En este respositorio se encuentra Modelo OpenSees, registros sismicos, archivos de resultados de los analisis tiempo historia, codigos de procesamiento, graficos y tablas  de la investigacion "EVALUACIÓN DE LA RESPUESTA LOCAL Y GLOBAL DE MUROS DE SECCIÓN COMPUESTA DE HORMIGÓN ARMADO CON DISIPADORES SÍSMICOS FRICCIONALES EN LA INTERFAZ ALA-ALMA"
