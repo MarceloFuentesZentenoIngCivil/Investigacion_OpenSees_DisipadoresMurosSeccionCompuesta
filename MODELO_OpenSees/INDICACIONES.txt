@@ -1,0 +1,17 @@
+1.De ser requerido; Abrir y editar archivo "Analysis_TH.tcl":
+	1.1 De ser requerido; editar linea 24 y 25, indicado el nombre del registro sismico que usara para la dirección L y T de análisis ( L corresponde a dirección Y del modelo ETABS; y T corresponde a dirección X del modelo ETABS ):   
+        	set gm_Name_L   "NombreRegistroSismico_Direccion_L.txt";
+		set gm_Name_L   "NombreRegistroSismico_Direccion_L.txt";
+	1.2 De ser requerido; editar linea 30 y 31, que corresponden a factores de escala de los registros sísmicos (registros usados en esta investigación están en "g", por lo que se multiplicaron por 9.8 para trabajar en m/s2):
+		set scaleFact_L [expr factor_registro_L];     
+		set scaleFact_T [expr factor_registro_T];		
+	1.3 De ser requerido; editar linea 32 que corresponde al Time-step del par de registros (registros deben tener mimso time step):
+		set dt_Reg      Time_step_par_registros; 
+	1.4 De ser requerido; editar linea 34 que corresponde al tiempo a analizar del par de registros sísmicos en segundos:
+		set secs        Tiempo_analizar;
+	1.5 De ser requerido; editar linea 36 que corresponde al paso temporal utlizado en el análisis (debe ser menor o igual al time step del registro)
+		set TimeStep    Paso_temporal_analisis;
+
+2. Abrir como administrador archivo OpenSees.exe
+3. Escribir "source Run_Marcelo.tcl"
+4. Comenzara el análisis tiempo-historia.
